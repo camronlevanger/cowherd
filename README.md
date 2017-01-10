@@ -35,9 +35,9 @@ cowherd beta "projectA-app-*" (equals to) cowherd projectA-app-%
 Configuration
 =============
 
-  We read configuration from config.json or config.yml in ~, /etc/cowherd/ and ~/.cowherd/ folders.
+  We read configuration from (in order) CLI options, ENV, `config.json` or `config.yml` in `~/`, `~/.cowherd/`, `/etc/cowherd/` folders.
 
-  If you want to use JSON format, create a config.json in the folders with content:
+  If you want to use JSON format, create a `config.json` in the folders with content:
 
       {
           "endpoint": "https://rancher.server/v1", // Or "https://rancher.server/v1/projects/xxxx"
